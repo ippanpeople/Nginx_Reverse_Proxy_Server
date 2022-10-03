@@ -1218,3 +1218,17 @@
 2022/10/03 20:57:40 [warn] 1#1: conflicting server name "dev.rinlink.jp" on 0.0.0.0:443, ignored
 2022/10/03 21:15:05 [warn] 1#1: conflicting server name "dev.rinlink.jp" on 0.0.0.0:443, ignored
 2022/10/03 21:18:01 [warn] 17#17: conflicting server name "dev.rinlink.jp" on 0.0.0.0:443, ignored
+2022/10/03 22:01:14 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:01:15 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:01:15 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:01:16 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:01:17 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:01:20 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:01:23 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:01:30 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:01:43 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:02:09 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:03:01 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:04:01 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:05:02 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:06:02 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20

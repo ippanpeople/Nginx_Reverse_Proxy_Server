@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nginx:
+    container_name: nginx
+    restart: always
+    image: macbre/nginx-http3:1.21.6
+    ports:
+      - 80:80
+      - 443:443/tcp
+      - 443:443/udp
+    environment:
+      - TZ=Asia/Tokyo
+

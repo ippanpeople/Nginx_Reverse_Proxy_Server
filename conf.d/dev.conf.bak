@@ -1,37 +1,35 @@
-server {
+server{
     listen 80;
-    server_name  codimd.rinlink.jp;
+    server_name  dev.rinlink.jp;
 
     return 301   https://$host$request_uri;
-    error_log    /var/log/nginx/rinlink_jp/codimd_error.log;
-    access_log   /var/log/nginx/rinlink_jp/codimd_access.log json;
-    #include      BLOCK.conf
-
+    error_log    /var/log/nginx/rinlink_jp/dev_error.log;
+    access_log   /var/log/nginx/rinlink_jp/dev_access.log json;
+    #include      BLOCK.conf;
 }
 
 server {
-    listen       443;
-    server_name  codimd.rinlink.jp;
-    #include      TLS1_3.conf;
-    #include      BLOCK.conf;
+    listen       443 http2 ssl;
+    server_name  dev.rinlink.jp;
+
     ssl_certificate         /etc/nginx/ssl/rinlink_jp.crt;
     ssl_certificate_key     /etc/nginx/ssl/rinlink_jp.key;
     ssl_session_cache       shared:SSL:10m;
     ssl_session_timeout     10m;
-    
-    error_log    /var/log/nginx/rinlink_jp/codimd_error.log;
-    access_log   /var/log/nginx/rinlink_jp/codimd_access.log json;
+    #include      TLS1_3.conf;
+    #include      BLOCK.conf;
+    #include      quic.conf;
+        
+    error_log    /var/log/nginx/rinlink_jp/dev_error.log;
+    access_log   /var/log/nginx/rinlink_jp/dev_access.log json;
 
     location / {
-        proxy_pass http://10.0.1.201:3000;
+        proxy_pass http://10.0.1.104:8888;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto;
         proxy_set_header Host $host;
         proxy_set_header Accept-Encoding '';
-        proxy_max_temp_file_size 0;
+       	proxy_max_temp_file_size 0;
     }
-
-
 }
-

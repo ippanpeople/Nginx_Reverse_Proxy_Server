@@ -1,0 +1,1 @@
+2022/10/03 22:44:07 [error] 7#7: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.29.0.1, server: codimd.rinlink.jp, request: "GET / HTTP/2.0", upstream: "http://10.0.1.201:3000/", host: "rinlink.jp"

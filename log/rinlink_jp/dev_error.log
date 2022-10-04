@@ -1,0 +1,1 @@
+2022/10/04 14:09:03 [error] 9#9: *38 upstream timed out (110: Operation timed out) while connecting to upstream, client: 150.66.63.246, server: dev.rinlink.jp, request: "GET / HTTP/1.1", upstream: "http://10.0.0.120:8888/", host: "dev.rinlink.jp"

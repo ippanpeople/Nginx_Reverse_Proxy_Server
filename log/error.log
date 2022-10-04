@@ -1232,3 +1232,10 @@
 2022/10/03 22:04:01 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
 2022/10/03 22:05:02 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
 2022/10/03 22:06:02 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/codimd.conf:20
+2022/10/03 22:52:14 [notice] 17#17: signal process started
+2022/10/04 15:29:15 [notice] 18#18: signal process started
+2022/10/04 15:33:29 [emerg] 29#29: cannot load certificate "/etc/nginx/ssl/nginx.crt": BIO_new_file() failed (SSL: error:02000002:system library:OPENSSL_internal:No such file or directory:fopen('/etc/nginx/ssl/nginx.crt','r') error:1100006e:BIO routines:OPENSSL_internal:NO_SUCH_FILE)
+2022/10/04 15:35:16 [notice] 37#37: signal process started
+2022/10/04 15:36:54 [notice] 49#49: signal process started
+2022/10/04 16:08:46 [notice] 61#61: signal process started
+2022/10/04 16:24:02 [notice] 73#73: signal process started

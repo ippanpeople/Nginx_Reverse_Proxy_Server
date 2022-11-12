@@ -10,7 +10,7 @@ server{
 
 server {
     listen       443 http2 ssl;
-    server_name  gitlab.rinlink.jp;
+    server_name  CNAME.rinlink.jp;
 
     ssl_certificate         /etc/nginx/ssl/rinlink_jp.crt;
     ssl_certificate_key     /etc/nginx/ssl/rinlink_jp.key;
